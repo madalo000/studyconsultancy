@@ -97,11 +97,54 @@ form .fields .input_field {
     margin: 8px 0;
 }
 
-.input_field .file_input {
-    outline: none;
-    height: 30px;
-    border: 0px;
-    box-shadow: none;
+.input_field_file {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_field_file .file_label {
+
+    font-size: 12px;
+    color: orange;
+    height: 60px;
+    width: 150px;
+    border-radius: 6px;
+    border: 1px dashed orange;
+    text-align: center; 
+    line-height: 60px;
+
+}
+
+
+.input_field_file .file_input {
+    display: none;
+}
+
+.input_field_file .file_label:hover {
+    color: #2e2e2e;
+    border: 1px dashed #2e2e2e;
+    cursor: pointer;
+}
+
+.selected_files {
+    margin-top: 10px;
+}
+
+.selected_file {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.file_name {
+    margin-right: 10px;
+}
+
+.remove_file {
+    cursor: pointer;
+    color: red;
 }
 
 .input_field input:is(:focus, :valid) {
@@ -109,9 +152,25 @@ form .fields .input_field {
 }
 
 
+
+select {
+    padding: 10px;
+    position: relative;
+}
+
+select:after {
+            content: '\25BC'; 
+            font-size: 16px;
+            color: #555; 
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+}
+
 .submit_container {
-    display: block;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .submit_details {
@@ -122,7 +181,32 @@ form .fields .input_field {
     display: inline-block;
     padding: 12px 24px;
     background-color: hwb(24 0% 0%);
-    color: white;
+    color:  white;
 }
 
+.submit_details:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.home_button {
+    height: 40px;
+    width: 60px;
+    border: 2px dashed hwb(24 0% 0%);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+    color:  hwb(24 0% 0%); 
+}
+.home_button:hover {
+    background-color: hwb(24 0% 0%);
+    color: white;
+    cursor: pointer;
+    border: 1px solid hwb(24 0% 0%);
+    transform: scale(1.1);
+}
+.go_back_container{
+    display: flex;
+    justify-content: center;
+}
 
