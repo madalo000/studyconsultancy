@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Work+Sans:wght@100;200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tan;
+}
+
+.form_container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: white;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+}
+
+.form_container header::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    background-color: orange;
+    border-radius: 8px;
+
+}
+
+.form_container form {
+    position: relative;
+    min-height: 400px;
+    margin-top: 16px;
+    background-color: white;
+}
+
+.form_container .personal_details {
+    margin-top: 30px;
+}
+
+.form_container form .heading {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: orange;
+}
+
+.form_container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input_field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+ 
+}
+
+.input_field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input_field input {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 42px;
+    padding: 0 15px;
+    margin: 8px 0;
+}
+
+.input_field .file_input {
+    outline: none;
+    height: 30px;
+    border: 0px;
+    box-shadow: none;
+}
+
+.input_field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+
+.submit_container {
+    display: block;
+    align-items: center;
+}
+
+.submit_details {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: hwb(24 0% 0%);
+    color: white;
+}
+
+

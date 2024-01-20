@@ -151,7 +151,7 @@ a:hover {
 .landing_container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(assets/pexels-joshua-mcknight-1139319\ \(1\).jpg);
+    background-image: url(/assets/pexels-joshua-mcknight-1139319\ \(1\).jpg);
     background-position: top;
     background-size: cover;
     overflow: hidden;
