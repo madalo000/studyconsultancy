@@ -14,6 +14,36 @@
 </head>
 
 <body>
+    <div class="nav-section">
+    <div>
+        <ul class="nav-links">
+            <li> <a href="#about"> About Us </a> </li>
+            <li> <a href="#offer"> What We Offer </a> </li>
+            <li> <a href="#reviews"> Reviews </a> </li>
+            <li> <a href="#contact"> Contact Us </a> </li>
+        </ul>
+        </div>
+    </nav>  <!-- Hamburger menu section-->
+    <nav id="hamburger-nav">
+        <div class="logo"> <img src="/assets/SIP_Logo.png"> </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()"> About Us </a> </li>
+                <li> <a href="#offer" onclick="toggleMenu()"> What We Offer </a> </li>
+                <li> <a href="#reviews" onclick="toggleMenu()"> Reviews </a> </li>
+                <li> <a href="#contact" onclick="toggleMenu()"> Contact Us </a> </li>
+            </div>
+        </div>
+
+    </nav>
+    </div>
+
+    <div class="main-section">
     <div class="form_container">
         <header> Start Your Journey </header>
 
@@ -45,9 +75,9 @@
                     <div class="input_field">
                     <label> Country </label>
                         <select id='country_select' name='country'>
-                        <option value="AF">Afghanistan</option>
-                        <option value="AX">Åland Islands</option>
-                        <option value="AL">Albania</option>
+                        <option> Afghanistan</option>
+                        <option> Åland Islands</option>
+                        <option> Albania</option>
                         <option value="DZ">Algeria</option>
                         <option value="AS">American Samoa</option>
                         <option value="AD">Andorra</option>
@@ -301,41 +331,41 @@
                         <label for="program"> Program </label>
                         <select id='program' name='program'>
                             <option> Social Work </option>
-                            <option value="2"> Gender Studies and Developmental Studies (BA) </option>
-                            <option value="3"> Leadership (MA) </option>
-                            <option value="1"> Early Childhood Development (MA) </option>
-                            <option value="3"> Tourism and Hospitality (BA) </option>
-                            <option value="3"> Midwifery (BSc) </option>
-                            <option value="3"> Clinical Nutrition & Dietetics </option>
-                            <option value="3"> International Business Management (BA) </option>
-                            <option value="3"> Beauty Science (BSc) </option>
-                            <option value="3"> Nursing (BSc) </option>
-                            <option value="3"> Clinical Nutrition & Dietics (MSc) </option>
-                            <option value="3"> International Tourism (MA) </option>
-                            <option value="3"> Beauty Science (MSc) </option>
-                            <option value="3"> Nursing (MSc) </option>
-                            <option value="3"> Physiotherapy (MSc) - 5 Years </option>
+                            <option> Gender Studies and Developmental Studies (BA) </option>
+                            <option> Leadership (MA) </option>
+                            <option> Early Childhood Development (MA) </option>
+                            <option> Tourism and Hospitality (BA) </option>
+                            <option> Midwifery (BSc) </option>
+                            <option> Clinical Nutrition & Dietetics </option>
+                            <option> International Business Management (BA) </option>
+                            <option> Beauty Science (BSc) </option>
+                            <option> Nursing (BSc) </option>
+                            <option> Clinical Nutrition & Dietics (MSc) </option>
+                            <option> International Tourism (MA) </option>
+                            <option> Beauty Science (MSc) </option>
+                            <option> Nursing (MSc) </option>
+                            <option> Physiotherapy (MSc) - 5 Years </option>
                         </select>
                     </div>
 
                     <div class="input_field">
                         <label for="intake"> Intake </label>
                         <select name="intake" id="intake">
-                            <option value="s24"> Summer - 2024/2025 </option>
-                            <option value="f24"> Fall - 2024/2025 </option>
-                            <option value="s25"> Summer - 2025/2026 </option>
+                            <option> Summer - 2024/2025 </option>
+                            <option> Fall - 2024/2025 </option>
+                            <option> Summer - 2025/2026 </option>
                         </select>
                     </div>
 
-                    <!-- <div class="input_field_file">
+                    <div class="input_field_file">
                         <input type="file" class="file_input" id="file_input" name="files">
-                        <label for="file_input" class="file_label"> Submit Documents </label>
+                        <label for="file_input" class="file_label"> Attach Documents </label>
                         
                         <div class="selected_files" id="selectedFiles">
-                            Display selected files here 
+                           <!-- Display selected files here -->
                         </div>
 
-                    </div> -->
+                    </div>
                 
                     </div>
 
@@ -350,6 +380,7 @@
           <button class="home_button" onclick="goBack()"> <i class="ri-arrow-left-line"></i></button>
         </div>
         
+    </div>
     </div>
     <script src="js/applicationscript.js"></script>
 </body>
