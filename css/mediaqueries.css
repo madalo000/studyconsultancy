@@ -1,9 +1,40 @@
 @media screen and (max-width: 1200px) {
+    .landing_content {
+        padding-inline: 50px;
+    }
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+       
+        
+        
+    }
+ 
+  
+    .landing_content h1 {
+       
+        font-size: 50px;
+    }
+
+    .top_image, .bottom_image {
+        height: 300px; 
+    }
+
+    .about_text {
+        padding: 30px 10px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    .contact_wrapper {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+       
     }
 }
 
@@ -14,4 +45,6 @@
     #hamburger-nav {
         display: none;
     }
+
+    
 }

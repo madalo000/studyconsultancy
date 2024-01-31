@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Study In Poland </title>
+    <title> UniLink Consultancy </title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
     rel="stylesheet"
 />
     <link rel="stylesheet" href="/css/mediaqueries.css" />
+    
 
 </head>
 <body>
@@ -21,7 +22,7 @@
         <nav id="desktop-nav">
         <!-- logo div here-->
         <div class="logo">
-            <img src="/assets/SIP_Logo.png">
+            <img src="assets/logo_unilink.png"> 
         </div>
 
          <!-- nav bar links, div container here-->
@@ -31,33 +32,41 @@
             <li> <a href="#offer"> What We Offer </a> </li>
             <li> <a href="#reviews"> Reviews </a> </li>
             <li> <a href="#contact"> Contact Us </a> </li>
+            <li> <a href="/application.html"> Apply </a></li>
+          
         </ul>
         </div>
-    </nav>  <!-- Hamburger menu section-->
+        </nav> 
+    <!-- Hamburger menu section-->
     <nav id="hamburger-nav">
-        <div class="logo"> <img src="/assets/SIP_Logo.png"> </div>
+        <div class="logo"> <img src="assets/logo_unilink.png"> </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-                <span> </span>
-                <span> </span>
-                <span> </span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
             </div>
             <div class="menu-links">
                 <li> <a href="#about" onclick="toggleMenu()"> About Us </a> </li>
                 <li> <a href="#offer" onclick="toggleMenu()"> What We Offer </a> </li>
                 <li> <a href="#reviews" onclick="toggleMenu()"> Reviews </a> </li>
                 <li> <a href="#contact" onclick="toggleMenu()"> Contact Us </a> </li>
+                <li> <a href="/application.html"> Apply </a></li>
             </div>
         </div>
 
     </nav>
         
     <div class="landing_content">
-        <h1> Study in Poland </h1> <br>
+        <h1> UniLink Consultancy </h1> <br>
         <p>
-            Studying in Poland doesn't have to be a solo journey. Let us open the door to your Polish academic adventure!
+            Studying abroad doesn't have to be a solo journey. Let us open the door to your academic adventure!
         </p>
-         <button> <a href="#about"> About Us </a> </button>  
+       
+            <button class="landing_button"> <a href="#about"> About Us </a> </button> 
+            
+        
+          
     </div>
 
         </div>
@@ -65,19 +74,26 @@
     <!-- About section here-->
     <section id="about"> 
         <div class="about_container">
+            <div class="top_image">
+        
+            </div>
             
             <div class="about_text">
             <h1> ABOUT US </h1>
-            <p> We provide application guidance, visa assistance, accomodation and so much more to ensure a seamless transition.
-            Learn more about the services we offer. </p>
+            <p> Welcome to UniLink Consultancy where we specialize in making your dreams of studying abroad a reality! </p>
+            <p>  We understand the challenges and complexities involved in applying to universities in foreign countries. That's why we're here to make the process smooth, stress-free, and successful for you. </p>
+            <p>We provide university application guidance, visa assistance, accomodation and so much more to ensure a seamless transition. </p>
+           <span> <h3> Our Mission </h3>
+            <p> Our mission is to provide you with the knowledge, resources, and support you need to navigate the complexities of studying abroad successfully.
+                Whether you're seeking admission to prestigious universities, assistance with visa applications, or guidance on finding suitable accommodation, we're here to help.</p>
+            <p> Learn more about the services we offer. </p></span>
+           
             <a href="#offer"> <button class="about_section_button"> What We Offer </button></a>
-        </div>
-        
-        <div class="about_image">
-        
-            <img src="assets/pexels-rfstudio-3059747.jpg" />
-        
-        </div>
+            </div>
+       
+            <div class="bottom_image">
+
+            </div>
         
         </div>
     </section>
@@ -88,9 +104,10 @@
             <h1 class="offer_heading"> WHAT WE OFFER </h1>
             <p class="offer_subheading"> We offer various services to make this a stress-free process </p>
             
-            <div class="offer_cards_container">
-            
-                <div class="card">
+       
+            <div class="swiper-container offer_cards_container">
+                
+                <div class="swiper-slider card">
                     <div class="image_container">
                         <img src="/assets/pexels-rfstudio-3059654.jpg" alt="not-available" />
                         
@@ -102,7 +119,7 @@
                 </div>
            
 
-                <div class="card">
+                <div class="swiper-slider card">
                     <div class="image_container">
                         <img src="/assets/pexels-rfstudio-3059747.jpg" alt="not-available" />
                         
@@ -113,7 +130,7 @@
                 </div>
                 </div>
        
-                <div class="card">
+                <div class="swiper-slider card">
                     <div class="image_container">
                         <img src="/assets/pexels-davis-sánchez-2495239.jpg" alt="not-available" />
                         
@@ -123,8 +140,9 @@
                     <p> Personalized welcome by one of our representatives, help with luggage and transportation to your accomodation. Enjoy a seamless arrival! </p>
                 </div>
                 </div>
+
+                </div>
             </div>
-            
 
             <div class="offer_footer">
                 <div class="footer_content">
@@ -135,6 +153,7 @@
                     <button class="footer_button">Start Your Journey</button>
                 </a>
             </div>
+            
 
         </div>
         </div>
@@ -144,39 +163,38 @@
     <section id="reviews"> 
         <div class="reviews_container">
             <h1 class="reviews_heading"> REVIEWS </h1> 
+            <h3 class="reviews_subheading"> Explore the reviews from our valued clients and their experiences with our services. </h3>
 
         <div class="reviews_wrapper">
-           <div class="wrapper_left">
-            <h3> Here is what some of our clients have to say </h3>
-           </div>
-
-            <div class="wrapper_right">
+      
                 <div class="review_card">
                     <h2 class="review_title"> Review 1</h2>
                     <div class="review_content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, justo at viverra tincidunt, quam turpis posuere metus, nec fermentum orci nunc ac arcu.</p>
                         <p>Nulla auctor risus vel nisi eleifend, eget eleifend sapien cursus. Integer rutrum, magna nec tincidunt eleifend, sem justo tristique nunc, in tincidunt sem nunc eget tortor.</p>
-                        <p>Quisque euismod eros vel lorem blandit consectetur. Donec lacinia, quam in dictum dapibus, felis justo vehicula justo, ut tempus tortor est in orci.</p>
+                        <p>Nulla auctor risus vel nisi eleifend, eget eleifend sapien cursus. Integer rutrum, magna nec tincidunt eleifend, sem justo tristique nunc, in tincidunt sem nunc eget tortor.</p>
                     </div>
-                    <footer class="review_footer">
+                    <div class="review_bottom">
                         <span>Rating: 4.5/5</span>
-                    </footer>
+                    </div>
                    
                 </div>
                 <div class="review_card">
                     <h2 class="review_title"> Review 2 </h2>
                     <div class="review_content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, justo at viverra tincidunt, quam turpis posuere metus, nec fermentum orci nunc ac arcu.</p>
+                        
                         <p>Nulla auctor risus vel nisi eleifend, eget eleifend sapien cursus. Integer rutrum, magna nec tincidunt eleifend, sem justo tristique nunc, in tincidunt sem nunc eget tortor.</p>
                         <p>Quisque euismod eros vel lorem blandit consectetur. Donec lacinia, quam in dictum dapibus, felis justo vehicula justo, ut tempus tortor est in orci.</p>
                     </div>
-                    <footer class="review_footer">
+                    <div class="review_bottom">
                         <span>Rating: 4.5/5</span>
-                    </footer>
-                   
+                    </div> 
                 </div>
-               
-            </div>
+              
+
+        </div>
+
+        <div class="review_footer"> 
+            <button> Read More Reviews </button>
         </div>
         </div>
     </section>
@@ -212,7 +230,7 @@
 
                 <div class="contact_details">
                     <h3 class="contact_subheading"> EMAIL </h3>
-                    <p> mayanakoma@eduportal.com </p>
+                    <p> mayanakoma@unilinkconsultancy.com </p>
 
                     <h3 class="contact_subheading"> GIVE US A CALL </h3>
                     <p> +48 790 571 432 </p>
@@ -223,7 +241,9 @@
         </div>
     </section>
 
-
+    <footer> 
+        <p> 2024 UniLink Consultancy. All Rights Reserved. </p>
+    </footer>
 
 
     <script src="/js/script.js">  </script>
