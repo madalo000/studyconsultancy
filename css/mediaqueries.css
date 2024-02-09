@@ -55,6 +55,9 @@
         flex-direction: column;
        
     }
+    .offer_footer {
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
