@@ -215,7 +215,7 @@ select:after {
 @media screen and (max-width: 1200px) {
     .form_container {
         position: relative;
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         border-radius: 6px;
         background-color: white;

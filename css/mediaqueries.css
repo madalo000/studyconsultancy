@@ -1,4 +1,22 @@
 @media screen and (max-width: 1200px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 17vh;
+        padding: 0 20px;
+    }
+    
+    .logo {
+        margin-right: auto; /* Push logo to the far left */
+        padding-right: 20px;
+    }
+    
+    .hamburger-menu {
+        margin-left: auto; /* Push hamburger menu to the far right */
+        padding-left: 20px;
+    }
     .landing_content {
         padding-inline: 50px;
     }
@@ -7,15 +25,16 @@
     }
     #hamburger-nav {
         display: flex;
-       
         
         
     }
  
-  
+    .landing_container {
+    background-size: cover;
+  }
     .landing_content h1 {
        
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .top_image, .bottom_image {

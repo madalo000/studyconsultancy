@@ -155,7 +155,7 @@ a:hover {
 .landing_container{
     width: 100%;
     min-height: 100vh;
-    background-image: url(/assets/pexels-joshua-mcknight-1139319\ \(1\).jpg);
+    background-image: url(/assets/pexels-andrea-piacquadio-3873911.jpg);
     background-position: top;
     background-size: cover;
     overflow: hidden;
@@ -315,7 +315,7 @@ a:hover {
 
 .offer_cards_container .card:hover .image_container {
  
-    filter: brightness(-10px);
+    
     opacity: 0.8;
     
 }
@@ -431,9 +431,8 @@ a:hover {
     max-width: 1000px;
     margin: auto;
     padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+   
+    
 
 }
 
@@ -572,6 +571,13 @@ textarea {
 .socials i {
     color: rgb(116, 46, 14);
     font-size: 30px;
+}
+.icon_links {
+    text-decoration: none;
+}
+
+.icon_links:hover {
+    text-decoration: none;
 }
 
 footer {
