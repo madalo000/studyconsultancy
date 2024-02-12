@@ -11,3 +11,26 @@ h1 {
     text-align: center;
     color: #db6008;
 }
+
+.go_back_container{
+    display: flex;
+    justify-content: center;
+}
+
+.home_button {
+    height: 40px;
+    width: 60px;
+    border: 2px dashed hwb(24 0% 0%);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: white;
+    color:  hwb(24 0% 0%); 
+}
+.home_button:hover {
+    background-color: hwb(24 0% 0%);
+    color: white;
+    cursor: pointer;
+    border: 1px solid hwb(24 0% 0%);
+    transform: scale(1.1);
+}
